@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "test": "tsx --test src/*.test.ts"
+    "test": "tsx --test --watch src/*.test.ts"
   },
   "author": "",
   "license": "MIT",
