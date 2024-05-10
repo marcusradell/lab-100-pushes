@@ -1,14 +1,6 @@
 import { Pair, createPair } from "./pair";
 
-export const isOverlapping = (pairA: Pair, pairB: Pair) => {
-  if (pairB[0] === 2) {
-    return false;
-  }
-
-  return true;
-};
-
-export const isOverlapping2 = (
+export const isOverlapping = (
   a1: number,
   a2: number,
   b1: number,
