@@ -1,4 +1,4 @@
-import { Pair, createPair } from "./pair";
+import { createPair } from "./pair";
 
 export const isOverlapping = (
   a1: number,
@@ -9,9 +9,5 @@ export const isOverlapping = (
   const pairA = createPair(a1, a2);
   const pairB = createPair(b1, b2);
 
-  if (pairB[0] === 2) {
-    return false;
-  }
-
-  return true;
+  return pairA[1] >= pairB[0];
 };
