@@ -3,7 +3,7 @@ import assert from "node:assert";
 import { isOverlapping, isOverlapping2 } from "./is-overlapping";
 
 test("same-numbered pairs that are equal overlaps", () => {
-  assert.deepStrictEqual(isOverlapping([0, 0], [0, 0]), true);
+  assert.deepStrictEqual(isOverlapping2(0, 0, 0, 0), true);
 });
 
 test("no overlap", () => {
