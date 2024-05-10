@@ -9,3 +9,7 @@ test("same-numbered pairs that are equal overlaps", () => {
 test("no overlap", () => {
   assert.deepStrictEqual(isOverlapping(0, 1, 2, 3), false);
 });
+
+test("first pair shadows second pair", () => {
+  assert.deepStrictEqual(isOverlapping(10, 100, 50, 55), true);
+});
